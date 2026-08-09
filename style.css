@@ -54,3 +54,65 @@ img {
 .msg-container{
      margin-top: 6rem;
 }
+@media (max-width: 700px) {
+    
+    body {
+        padding: 1rem; 
+    }
+
+    h1 {
+        font-size: 1.6rem; 
+        margin-bottom: 1.5rem;
+    }
+
+    .choices {
+        flex-direction: column; 
+        gap: 1.2rem; 
+        margin: 1.5rem 0; 
+    }
+
+    .choice {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .choice img {
+        width: 55px; 
+        height: 55px;
+    }
+
+    .score-board {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.1rem;
+        margin: 1.2rem 0; 
+    }
+.msg-container {
+    text-align: center;
+    margin-top: 2rem; /* اوپر سے گیپ */
+}
+
+.msg-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center; /* center میں لے آئے گا */
+}
+
+.msg{
+    display: block; /* inline-block کی بجائے block */
+    background-color: #f44336; 
+    color: #fff;
+    font-size: 1.2rem; /* اور چھوٹا کر دیا */
+    padding: 1.2rem 2rem; /* padding زیادہ */
+    border-radius: 12px;
+    line-height: 2; /* لائنوں کے درمیان بہت گیپ */
+    text-align: center;
+    width: fit-content; /* box text کے حساب سے خود بڑا ہو */
+    max-width: 85%; /* موبائل پر باہر نہ جائے */
+    margin: 0 auto; /* center */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* تھوڑا سا shadow تاکہ صاف نظر آئے */
+}
+
+.msg.win { background-color: #4CAF50; } 
+.msg.draw { background-color: #2196F3; } 
+}
